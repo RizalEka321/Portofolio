@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTOFOLIO</title>
+    <link rel="icon" href="assets/img/fotoku.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link href="plugins/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="plugins/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="plugins/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="plugins/fontawesome/css/sharp-thin.css" rel="stylesheet" />
+    <link href="plugins/fontawesome/css/duotone-thin.css" rel="stylesheet" />
+    <link href="plugins/fontawesome/css/sharp-duotone-thin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li class="active" data-target="0"><i class="fa-solid fa-house-user"></i>Home</li>
+        <li data-target="1"><i class="fa-solid fa-address-card"></i>About</li>
+        <li data-target="1"><i class="fa-solid fa-file"></i>Resume</li>
+        <li data-target="2"><i class="fa-solid fa-user-pen"></i>Skill</li>
+        <li data-target="3"><i class="fa-solid fa-list-check"></i>Project</li>
+        <li data-target="4"><i class="fa-solid fa-address-book"></i>Contact</li>
+      </ul>
+    </nav>
+    <div class="book">
+      <img src="assets/img/fotoku.jpg" alt="fotoku" />
+      <section class="page">
+        <div class="home">
+          <div class="content-home">
+            <h1>Halo....</h1>
+            <h1>Saya, <span>Rizal Eka Budi Pratama</span></h1>
+            <p>
+              Lulusan Teknologi Rekayasa Perangkat Lunak dari Politeknik Negeri Banyuwangi dengan minat yang mendalam di bidang Fullstack Development. Memiliki keahlian dalam Front-end dan Back-end Development serta telah menyelesaikan
+              berbagai proyek pengembangan web
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="page show">
+        <div class="about">
+          <h1>About</h1>
+        </div>
+      </section>
+      <section class="page">
+        <div class="skill">
+          <h1>Skill</h1>
+        </div>
+      </section>
+      <section class="page">
+        <div class="project">
+          <h1>Project</h1>
+        </div>
+      </section>
+      <section class="page">
+        <div class="contact">
+          <h1>Contact</h1>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      const pages = $(".page");
+
+      function showPage(index) {
+        pages.removeClass("show").addClass("hidden");
+        pages.eq(index).removeClass("hidden").addClass("show");
+      }
+
+      $(".navbar ul li").click(function () {
+        const index = $(this).data("target");
+
+        $(".navbar ul li").removeClass("active");
+        $(this).addClass("active");
+
+        showPage(index);
+      });
+
+      showPage(0);
+    });
+  </script>
+</html>
