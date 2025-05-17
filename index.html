@@ -23,14 +23,14 @@
       <ul>
         <li class="active" data-target="0"><i class="fa-solid fa-house-user"></i>Home</li>
         <li data-target="1"><i class="fa-solid fa-address-card"></i>About</li>
-        <li data-target="1"><i class="fa-solid fa-file"></i>Resume</li>
-        <li data-target="2"><i class="fa-solid fa-user-pen"></i>Skill</li>
-        <li data-target="3"><i class="fa-solid fa-list-check"></i>Project</li>
-        <li data-target="4"><i class="fa-solid fa-address-book"></i>Contact</li>
+        <li data-target="2"><i class="fa-solid fa-file"></i>Resume</li>
+        <li data-target="3"><i class="fa-solid fa-user-pen"></i>Skill</li>
+        <li data-target="4"><i class="fa-solid fa-list-check"></i>Project</li>
+        <li data-target="5"><i class="fa-solid fa-address-book"></i>Contact</li>
       </ul>
     </nav>
     <div class="book">
-      <img src="assets/img/fotoku.jpg" alt="fotoku" />
+      <img class="photo-identity" src="assets/img/fotoku.jpg" alt="fotoku" />
       <section class="page">
         <div class="home">
           <div class="content-home">
@@ -43,9 +43,72 @@
           </div>
         </div>
       </section>
-      <section class="page show">
+      <section class="page">
         <div class="about">
-          <h1>About</h1>
+          <div class="title-about">
+            <h1>About</h1>
+          </div>
+          <div class="content-about">
+            <div class="description-top">
+              <p>
+                Saya adalah seorang Web Developer & Programmer dengan minat dan dedikasi tinggi dalam dunia pengembangan perangkat lunak. Saya memiliki pengalaman dalam merancang dan membangun berbagai aplikasi web, baik dari sisi front-end
+                maupun back-end.
+              </p>
+            </div>
+            <div class="description-middle">
+              <img class="description-middle-photo" src="assets/img/fotoku.jpg" alt="fotoku" />
+              <div class="description-middle-content">
+                <h1>Web Developer & Programmer</h1>
+                <p>
+                  Saya memiliki semangat tinggi dalam mempelajari hal baru dan mengembangkan solusi digital yang efisien serta user-friendly. Dengan latar belakang pendidikan di bidang Teknologi Rekayasa Perangkat Lunak, saya siap
+                  berkontribusi dalam tim maupun proyek individu.
+                </p>
+                <table class="identity-table">
+                  <tr>
+                    <td><strong>Nama</strong></td>
+                    <td>:</td>
+                    <td>Rizal Eka Budi Pratama</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Tanggal Lahir</strong></td>
+                    <td>:</td>
+                    <td>1 Januari 2000</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Umur</strong></td>
+                    <td>:</td>
+                    <td>25 Tahun</td>
+                  </tr>
+                  <tr>
+                    <td><strong>No HP</strong></td>
+                    <td>:</td>
+                    <td>0812-3456-7890</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Email</strong></td>
+                    <td>:</td>
+                    <td>rizal@example.com</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Alamat</strong></td>
+                    <td>:</td>
+                    <td>Banyuwangi, Jawa Timur</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="description-bottom">
+              <p>
+                Komitmen saya adalah terus berkembang dan memberikan kontribusi nyata dalam dunia digital. Saya percaya bahwa teknologi dapat menjadi solusi efektif untuk banyak tantangan sehari-hari, dan saya ingin menjadi bagian dari
+                perubahan tersebut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page">
+        <div class="resume">
+          <h1>Resume</h1>
         </div>
       </section>
       <section class="page">
@@ -83,7 +146,7 @@
         showPage(index);
       });
 
-      showPage(0);
+      showPage(1);
     });
   </script>
 </html>
