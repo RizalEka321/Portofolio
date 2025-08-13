@@ -402,7 +402,7 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
 }
 
 .card-skill {
@@ -413,7 +413,6 @@ body {
   align-items: center;
   background-color: var(--putih);
   padding: 20px;
-  border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #fff;
@@ -433,7 +432,7 @@ body {
 
 .desc-skill h2 {
   margin-bottom: 5px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--merah);
 }
