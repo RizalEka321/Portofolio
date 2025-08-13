@@ -13,7 +13,7 @@ html {
 
 body {
   display: flex;
-  background-image: url("/assets/img/bg.jpg");
+  background-image: url("assets/img/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -374,9 +374,6 @@ body {
   justify-content: start;
   margin: 70px;
   padding: 40px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .title-skill {
@@ -390,6 +387,52 @@ body {
   color: var(--merah);
   padding-bottom: 5px;
   padding-left: 5px;
+  font-style: italic;
+}
+
+.content-skill {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.card-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--putih);
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-skill img {
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.card-skill h2 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: var(--merah);
+  text-align: center;
+}
+
+.card-skill span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--hitam);
+  text-align: justify;
   font-style: italic;
 }
 
@@ -514,18 +557,20 @@ body {
 
 .card-contact img {
   width: 25%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .card-contact h2 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-size: 1rem;
   color: var(--merah);
   text-align: center;
 }
 
-.card-contact p {
+.card-contact span {
   font-size: 0.9rem;
+  font-weight: 600;
   color: var(--hitam);
   text-align: justify;
+  font-style: italic;
 }
