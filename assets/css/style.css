@@ -13,10 +13,18 @@ html {
 
 body {
   display: flex;
-  background-image: url("assets/img/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 /* navbar */
@@ -391,19 +399,20 @@ body {
 }
 
 .content-skill {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .card-skill {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--putih);
   padding: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #fff;
@@ -423,7 +432,8 @@ body {
 
 .card-skill h2 {
   margin-bottom: 5px;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--merah);
   text-align: center;
 }
@@ -434,6 +444,25 @@ body {
   color: var(--hitam);
   text-align: justify;
   font-style: italic;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 200px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, var(--merah), var(--merah-muda));
+  color: white;
+  text-align: center;
+  height: 100%;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 /* Project */
